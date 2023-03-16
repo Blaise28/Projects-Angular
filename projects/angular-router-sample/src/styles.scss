@@ -1,2 +1,10 @@
 //Global css
-@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body{
+    min-height: 100vh;
+    --bs-bg-opacity: .2 !important;
+}
+.active{
+    border-bottom: 3px solid;
+}

@@ -1,3 +1,58 @@
-<div class="container">
-  <h1>salut les gens</h1>
- 
+<nav class="navbar navbar-expand-lg bg-light px-3 shadow mb-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Zel</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse me-5 justify-content-end"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            ariaCurrentWhenActive="page"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/crisis-list"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Crisis</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/heroes-list"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Heroes</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <h1 class="mb-4">Angular Router Sample</h1>
+
+  <!-- pour qu'il charge dynamiquement les composants par rapport a l'URL -->
+  <router-outlet></router-outlet>
+</div>
