@@ -1,0 +1,13 @@
+<div class="heroes">
+  <h1>Heroes</h1>
+  <ul class="list-group list-group">
+    <li
+      *ngFor="let hero of heroesList"
+      class="list-group-item d-flex justify-content-between align-items-center"
+      routerLink="/detail/{{ hero.id }}"
+    >
+      {{ hero.heroName }}
+      <span class="badge bg-primary rounded-pill">{{ hero.id }}</span>
+    </li>
+  </ul>
+</div>
