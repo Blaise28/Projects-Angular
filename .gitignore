@@ -1,9 +1,5 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-#my Files
-/projects/app-meteo/
-/projects/cowshed/
-
 # Compiled output
 /dist
 /tmp
